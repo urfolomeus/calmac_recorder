@@ -26,7 +26,7 @@ And make sure that the named user has access to do everything on that schema:
 
 ```bash
 psql
-GRANT GRANT ALL PRIVILEGES ON DATABASE <schema> TO <user>
+GRANT ALL PRIVILEGES ON DATABASE <schema> TO <user>
 ```
 
 If you run into difficulties then GIYF ;)
