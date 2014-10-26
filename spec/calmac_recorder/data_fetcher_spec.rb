@@ -1,4 +1,5 @@
 require 'spec_helper'
+require_relative '../../lib/calmac_recorder/data_fetcher'
 
 describe 'fetching data' do
   let(:df) { DataFetcher.new }
