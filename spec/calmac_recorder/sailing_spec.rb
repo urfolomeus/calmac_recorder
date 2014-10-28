@@ -4,9 +4,14 @@ require 'timecop'
 describe Sailing do
   it { should validate_presence_of :service }
   it { should validate_presence_of :crossing }
+  it { should validate_presence_of :status }
 
   it "adds timestamps before creating" do
-    sailing = Sailing.new(service: 'COLL and TIREE', crossing: 'Oban- Coll- Tiree')
+    sailing = Sailing.new(
+      service: 'COLL and TIREE',
+      crossing: 'Oban- Coll- Tiree',
+      status: 'orange'
+    )
     now = Time.now
     Timecop.freeze(now) do
       sailing.save

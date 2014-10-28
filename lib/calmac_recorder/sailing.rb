@@ -9,12 +9,12 @@ class Sailing
   property :info,           Text
   property :created_at,     DateTime
   property :updated_at,     DateTime
-  property :due_depart,     String
-  property :due_arrive,     String
-  property :actual_depart,  String
-  property :actual_arrive,  String
+  property :due_depart,     DateTime
+  property :due_arrive,     DateTime
+  property :actual_depart,  DateTime
+  property :actual_arrive,  DateTime
   property :cancelled,      Boolean
 
-  validates_presence_of :service, :crossing
+  validates_presence_of :service, :crossing, :status
 end
 

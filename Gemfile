@@ -11,4 +11,5 @@ group :development, :test do
   gem 'rspec'
   gem 'dm-rspec'
   gem 'timecop'
+  gem 'database_cleaner', '1.3.0'
 end
